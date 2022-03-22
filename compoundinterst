@@ -1,0 +1,13 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    long long int p,r,t;
+    double ci;
+    cin>>p>>r>>t;
+    ci=p*(pow((1+r*0.01),t));
+    cout<<fixed;
+    cout<<setprecision(2);
+    cout<<ci;
+    return 0;
+}
