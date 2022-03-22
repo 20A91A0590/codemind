@@ -1,0 +1,19 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    long long int X;
+    cin>>X;
+    if(X%10==0)
+    {
+        cout<<X/10;
+    }
+    else if(X<0)
+    {
+        cout<<X/10-1;
+    }
+    else
+    {
+        cout<<X/10;
+    }
+}
