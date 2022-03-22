@@ -1,0 +1,9 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int P,T,R;
+    cin>>P>>T>>R;
+    cout<<((P*T*R)/100);
+    
+}
