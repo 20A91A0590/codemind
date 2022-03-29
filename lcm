@@ -1,0 +1,16 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int a,b,r;
+    cin>>a>>b;
+    r=(a>b)?a:b;
+    while(1){
+    if(r%a==0 and r%b==0)
+    {
+      cout<<r;
+      break;
+    }
+    ++r;
+    }
+}
