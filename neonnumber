@@ -1,0 +1,19 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int sum=0,n,r,sqr;
+    cin>>n;
+    sqr=n*n;
+    while(sqr>0)
+    {
+        r=sqr%10;
+        sum=sum+r;
+        sqr=sqr/10;
+    }
+    if(sum==n)
+    cout<<"Neon Number";
+    else
+    cout<<"Not Neon Number";
+    return 0;
+}
