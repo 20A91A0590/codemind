@@ -1,0 +1,25 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n,r,s=0;
+    cin>>n;//123 or -123
+    bool negative=false;
+    if(n<0)
+    {
+        negative=true;//f=t
+        n=-n;//-123=123
+    }
+    while(n>0)
+    {
+        r=n%10;//123%10=3 12%10=2 1%10=1
+        s=s*10+r;//0+3=3 30+2=32 320+1=321
+        n=n/10;//123/10=12  12/10=1 1/10=0
+    }
+    if(negative)
+    {
+        s=-s;//-321
+    }
+    cout<<s;
+    return 0;
+}
