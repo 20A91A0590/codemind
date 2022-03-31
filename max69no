@@ -3,23 +3,23 @@ using namespace std;
 int main()
 {
 	int n,temp=0,count=10,h,p,k,c,l=0;
-	cin>>n;
-	h=n;
-	k=n;
-	p=n;
-	while(k)
+	cin>>n;//9669
+	h=n;//9669
+	k=n;//9669
+	p=n;//9669
+	while(k)//9669
 	{
-		c=n%10;
-		n=n/10;
+		c=n%10;//C=9669%10=9 //966%10=
+		n=n/10;//9669/10=966
 		if(c==6)
 		{
 			if(n==1)
 			n=0;
 			p=n*count+9*(count/10)+l;
 		}
-		l=h%count;
-		k=k/10;
-		count=count*10;	
+		l=h%count;//9669%10=9
+		k=k/10;9669/10=966
+		count=count*10;	//100
 	}
 	cout<<p;
 }
