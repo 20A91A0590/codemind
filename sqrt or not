@@ -1,0 +1,15 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n,m;
+    cin>>n;//n=36  n=24
+    float s;
+    s=sqrt(n);//sqrt(36)=6 sqrt(24)=4.123
+    m=s;//m=6 4
+    if(s==m)//6=6 condition statisfy 4.123!=4 condition is not statisfy go to else case
+    cout<<"True";
+    else
+    cout<<"False";
+    return 0;
+}
