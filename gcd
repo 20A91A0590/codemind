@@ -1,0 +1,20 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int n1,n2;//30,100
+	cin>>n1>>n2;
+	int count=0;
+	while(n2!=0)//100!=0 40!=0 10!=0 30!=0 20!=0 10!=0
+	{
+		if(n2>=n1)//100>30 40>30 10!>30 swapp 30>10 20>10 10>=10
+	    {
+	    	n2=n2-n1;//70 10 20 10 0
+	    }
+	    else
+	    {
+	    	swap(n1,n2); // 10 30
+	    }
+	}
+	cout<<n1;
+}
