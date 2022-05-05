@@ -1,0 +1,26 @@
+#include<bits/stdc++.h>
+using namespace std;
+  int main() 
+  {
+        int n, x = 0, y = 1, temp, flag = 0;
+        cin>>n;
+        while (y <= n) 
+        {
+                temp = y;
+                y = x + y;
+                x = temp;
+                if (y == n) {
+                        flag = 1;
+                        break;
+                }
+        }
+        if (flag)
+        {
+                cout<<"True";
+        }
+        else 
+        {
+                cout<<"False";
+        }
+        return 0;
+  }
