@@ -1,0 +1,23 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+    int a[n],i,k,l,cnt=0;
+    for( i=0;i<n;i++)
+    {
+      cin>>a[i];
+    }
+    cin>>k>>l;
+        for(i=0;i<n;i++)
+        {
+            if(a[i]<k || a[i]>l)
+            {
+                cout<<a[i]<<" ";
+             cnt++;
+            }
+        }
+        if(cnt==0)
+        cout<<"-1";
+}
