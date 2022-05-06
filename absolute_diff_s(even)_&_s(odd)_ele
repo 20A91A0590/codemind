@@ -1,0 +1,30 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+    int a[n],i;
+    for(i=0;i<n;i++)
+    {
+        cin>>a[i];
+    }
+    int s=0,r=0;
+    for(i=0;i<n;i++)
+    {
+        if(a[i]%2==0)
+        {
+        s=s+a[i];
+        }
+    }
+        for(i=0;i<n;i++)
+    {
+        if(a[i]%2!=0)
+        {
+        r=r+a[i];
+        }
+    }
+    float d;
+    d=(abs)(r-s);
+  cout<<d;
+}
