@@ -1,0 +1,41 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+    int a[n],cnt=0,i,j;
+    float count=0,sum=0;
+    for(i=0;i<n;i++)
+    {
+        cin>>a[i];
+    }
+    for(i=0;i<n;i++)
+        {
+            cnt=1;
+            for(j=0;j<n;j++)
+            {
+                if(i!=j)
+                {
+                if(a[i]==a[j] && a[j]!=0)
+                {
+                a[j]=0;
+                cnt++;
+                }
+                }
+            }
+            if(a[i]==cnt)
+            {
+            sum=sum+a[i];
+            count++;
+            }
+        }
+        if(count>0)
+        {
+        sum=sum/count;
+        cout<< fixed<<setprecision(2);
+        cout<<sum;
+        }
+        else
+        cout<<"-1";
+}
